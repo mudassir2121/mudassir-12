@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            border: 1px ridge black;
+            position: relative;
+            perspective: 2000px;
+        }
+        .box-img,img{
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .box-img{
+            border: 1px ridge black;
+            transition: all 1s ease-in-out;
+        }
+        .box-content{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            background:grey;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            top: 0;
+            left: 0;
+            transform:rotateY(90deg);
+            transition:all 1s ease-in-out;
+        }
+        .box:hover .box-img{
+            transform: rotateY(-90deg);
+        }
+        .box:hover .box-content{
+            transform: rotateY(0deg);
+
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="box">
+        <div class="box-img">
+            <img src="2020-honda-civic-sport-manual-angular-front-exterior-view_100751892_l.jpg" alt="">
+        </div>
+        <div class="box-content">
+            <h3>huzaifa</h3>
+            <p>i am software engineer and i word to resolve software issues.</p>
+        </div>
+    </div>
+    
+    
+    
+</body>
+
+</html>
